@@ -11,7 +11,7 @@ const Layout = () => {
     data: null,
   })
 
-  const [ingredients, setIngredients] = useState([])
+  const [ingredients, setIngredients] = useState(['Paneer', 'Tomato', 'Onion', 'Ginger', 'Garlic', 'Green Chilli', 'Capsicum', 'Coriander Leaves', 'Cumin Seeds', 'Turmeric Powder', 'Red Chilli Powder', 'Coriander Powder', 'Garam Masala', 'Salt', 'Oil', 'Water'])
 
   return (
     <>

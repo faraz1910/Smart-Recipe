@@ -11,12 +11,12 @@ const Navbar = ({ openAddIngredient, setOpenAddIngredient }) => {
             </h1>
         </div>
         <div>
-            <button className='bg-purple-950 text-white font-medium px-4 py-2 rounded-2xl' onClick={() => {
+            {/* <button className='bg-purple-950 text-white font-medium px-4 py-2 rounded-2xl' onClick={() => {
               setOpenAddIngredient({
                 isShown: true,
                 data: null
               })
-            }}>ADD</button>
+            }}>ADD</button> */}
         </div>
     </div>
     </>
