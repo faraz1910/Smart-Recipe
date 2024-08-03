@@ -7,6 +7,7 @@ import { useOutletContext } from "react-router-dom";
 import Accordion from "../../components/Accordion";
 import { FaPlus } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import axios from "axios";
 
 const Home = () => {
   const {
@@ -14,6 +15,7 @@ const Home = () => {
     setOpenAddIngredient,
     ingredients,
     setIngredients,
+    handleSearch
   } = useOutletContext();
 
   const [newIngredient, setNewIngredient] = useState("");
@@ -60,7 +62,7 @@ const Home = () => {
               <FaPlus />
             </button>
           </div>
-          <button className="font-medium bg-purple-900 px-4 py-2 rounded-xl text-white">
+          <button className="font-medium bg-purple-900 px-4 py-2 rounded-xl text-white"onClick={handleSearch}>
             Search
           </button>
         </div>
