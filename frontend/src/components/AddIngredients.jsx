@@ -1,15 +1,9 @@
+// AddIngredients.jsx
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
-const AddIngredients = ({
-  onChangeIngredient,
-  onAddIngredient,
-  onDeleteIngredient,
-  ingredients,
-  onClose,
-}) => {
-
-    const [newIngredient, setNewIngredient] = useState("");
+const AddIngredients = ({ onAddIngredient, onDeleteIngredient, ingredients, onClose }) => {
+  const [newIngredient, setNewIngredient] = useState("");
 
   return (
     <div className="relative">
@@ -46,8 +40,9 @@ const AddIngredients = ({
           <button
             className="bg-purple-400 text-white font-medium px-4 py-2 rounded-md"
             onClick={() => {
-                onAddIngredient(newIngredient)
-                setNewIngredient("")}}
+              onAddIngredient(newIngredient);
+              setNewIngredient("");
+            }}
           >
             Add
           </button>
